@@ -11,8 +11,8 @@ addons:
 
 node_js:
   - "9"
+  - "8"
   - "6"
-  - "4"
 
 before_install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export CXX=g++-4.8; fi
