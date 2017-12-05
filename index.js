@@ -10,7 +10,8 @@ function createDirectoryStream (name) {
   })
 
   stream.struct = null
-  stream.name = Buffer.from(name)
+  stream.name = Buffer.alloc(Buffer.byteLength(name) + 1)
+  stream.name.write(name)
 
   return stream
 
