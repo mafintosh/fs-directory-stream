@@ -1,6 +1,6 @@
 # fs-directory-stream
 
-Stream fs.readdir.
+Streaming fs.readdir.
 
 ```
 npm install fs-directory-stream
