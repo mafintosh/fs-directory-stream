@@ -1,0 +1,29 @@
+{
+  "name": "fs-directory-stream",
+  "version": "0.0.0",
+  "description": "Streaming fs.readdir",
+  "main": "index.js",
+  "gyp": true,
+  "dependencies": {
+    "from2": "^2.3.0",
+    "nan": "^2.8.0",
+    "node-gyp-build": "^3.2.2"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/fs-directory-stream.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/fs-directory-stream/issues"
+  },
+  "homepage": "https://github.com/mafintosh/fs-directory-stream"
+}
