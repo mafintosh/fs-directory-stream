@@ -6,6 +6,8 @@ Stream fs.readdir.
 npm install fs-directory-stream
 ```
 
+[![Build Status](https://travis-ci.org/mafintosh/fs-directory-stream.svg?branch=master)](https://travis-ci.org/mafintosh/fs-directory-stream)
+
 Useful if your directory contains a ton of directories and you don't want to read them all into ram at once.
 
 ## Usage
