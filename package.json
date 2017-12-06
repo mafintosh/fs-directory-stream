@@ -1,6 +1,6 @@
 {
   "name": "fs-directory-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Streaming fs.readdir",
   "main": "index.js",
   "gyp": true,
