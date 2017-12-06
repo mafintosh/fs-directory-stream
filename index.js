@@ -23,7 +23,7 @@ function createDirectoryStream (name) {
   }
 
   function openAndRead (cb) {
-    stream.struct = Buffer.allocUnsafe(binding.SIZEOF_FS_DIRECTORY_STREAM_T)
+    stream.struct = Buffer.alloc(binding.SIZEOF_FS_DIRECTORY_STREAM_T)
     binding.uv_fs_scandir(stream.struct, stream.name, function (err) {
       if (err) return cb(err)
       read(cb)
