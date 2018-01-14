@@ -34,3 +34,15 @@ tape('ENOTDIR', function (t) {
     })
     .resume()
 })
+
+tape('running GC after creating a stream works fine', function (t) {
+  createDirectoryStream(__dirname)
+    .on('data', function dummy () {})
+    .on('end', function () {
+      setTimeout(function () {
+        global.gc()
+        global.gc(true)
+        t.end()
+      }, 10)
+    })
+})

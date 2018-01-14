@@ -14,7 +14,7 @@
     "tape": "^4.8.0"
   },
   "scripts": {
-    "test": "standard && tape test.js"
+    "test": "standard && node --expose-gc test.js"
   },
   "repository": {
     "type": "git",
